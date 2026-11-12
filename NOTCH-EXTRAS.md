@@ -1,7 +1,7 @@
 ---
 title: Notch Extras
 type: project
-status: building
+status: shelved
 created: 2026-11-12
 updated: 2026-11-12
 upstream: https://github.com/TheBoredTeam/boring.notch (commit b7611bb, 2026-10-31)
@@ -9,6 +9,8 @@ tags: [macos, notch, swiftui]
 ---
 
 # Notch Extras
+
+> **Shelved 2026-11-12.** Switched to [Vorssaint](https://github.com/vorssaint/vorssaint-utils) (v3.4.1), which covers the notch, clipboard history, screenshots, and notes, plus a Claude session tracker, timers, and paste as plain text. The app was removed from Applications; code is kept here in case Vorssaint doesn't work out.
 
 Aaron's private copy of [Boring.Notch](https://github.com/TheBoredTeam/boring.notch) with three added tabs: Clipboard, Screenshots, and Note. Everything from upstream (media controls, shelf with AirDrop, calendar, HUD) is kept.
 
@@ -47,6 +49,7 @@ Code lives in `boringNotch/components/Extras/`. Small hooks in `ContentView.swif
 | Clipboard polls the change count every 0.5s | macOS has no clipboard-changed notification; this is the standard approach. | — |
 | Note tab lets the notch take keyboard focus only while it's open | Upstream never takes focus; this keeps that true everywhere else. | Always-focusable notch |
 | Quick note goes to Obsidian | Aaron's choice. | Claude prompt, Apple Notes |
+| Switch to Vorssaint (2026-11-12) | Free, signed, open source; already does everything here plus Claude session tracking, timers, and much more. | Porting its features into this fork |
 | Calendar uses the macOS Calendar app, personal calendars only | Aaron's choice; work Outlook calendar not needed. | Adding Outlook to Calendar |
 
 ## Known limits
