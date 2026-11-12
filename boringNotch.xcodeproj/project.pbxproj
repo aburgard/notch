@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A0EE0200002EC9AABA00F8 /* FolderAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0EE0100002EC9AABA00F8 /* FolderAccess.swift */; };
+		A0A0EE0201002EC9AABA00F8 /* ClipboardHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0EE0101002EC9AABA00F8 /* ClipboardHistory.swift */; };
+		A0A0EE0202002EC9AABA00F8 /* RecentScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0EE0102002EC9AABA00F8 /* RecentScreenshots.swift */; };
+		A0A0EE0203002EC9AABA00F8 /* QuickNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0EE0103002EC9AABA00F8 /* QuickNote.swift */; };
+		A0A0EE0204002EC9AABA00F8 /* ExtrasViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0EE0104002EC9AABA00F8 /* ExtrasViews.swift */; };
 		1100290C2E847E2800035A57 /* NSItemProvider+LoadHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100290B2E847E2800035A57 /* NSItemProvider+LoadHelpers.swift */; };
 		110029272E84FD4C00035A57 /* TemporaryFileStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110029262E84FD4C00035A57 /* TemporaryFileStorageService.swift */; };
 		1100292A2E8691B400035A57 /* FileShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110029292E8691B400035A57 /* FileShareView.swift */; };
@@ -181,6 +186,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A0A0EE0100002EC9AABA00F8 /* FolderAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderAccess.swift; sourceTree = "<group>"; };
+		A0A0EE0101002EC9AABA00F8 /* ClipboardHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardHistory.swift; sourceTree = "<group>"; };
+		A0A0EE0102002EC9AABA00F8 /* RecentScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentScreenshots.swift; sourceTree = "<group>"; };
+		A0A0EE0103002EC9AABA00F8 /* QuickNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNote.swift; sourceTree = "<group>"; };
+		A0A0EE0104002EC9AABA00F8 /* ExtrasViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtrasViews.swift; sourceTree = "<group>"; };
 		1100290B2E847E2800035A57 /* NSItemProvider+LoadHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSItemProvider+LoadHelpers.swift"; sourceTree = "<group>"; };
 		110029262E84FD4C00035A57 /* TemporaryFileStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFileStorageService.swift; sourceTree = "<group>"; };
 		110029292E8691B400035A57 /* FileShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShareView.swift; sourceTree = "<group>"; };
@@ -357,6 +367,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0A0EE0000002EC9AABA00F8 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				A0A0EE0100002EC9AABA00F8 /* FolderAccess.swift */,
+				A0A0EE0101002EC9AABA00F8 /* ClipboardHistory.swift */,
+				A0A0EE0102002EC9AABA00F8 /* RecentScreenshots.swift */,
+				A0A0EE0103002EC9AABA00F8 /* QuickNote.swift */,
+				A0A0EE0104002EC9AABA00F8 /* ExtrasViews.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		1113ABB82E80E27000EC13B2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +508,7 @@
 		1471639B2C5D362F0068B555 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				A0A0EE0000002EC9AABA00F8 /* Extras */,
 				B141C23B2CA5F50900AC8CC8 /* Onboarding */,
 				B1C448992C97375A001F0858 /* Tips */,
 				14C08BB72C8DE49E000F8AA0 /* Calendar */,
@@ -905,6 +928,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A0EE0200002EC9AABA00F8 /* FolderAccess.swift in Sources */,
+				A0A0EE0201002EC9AABA00F8 /* ClipboardHistory.swift in Sources */,
+				A0A0EE0202002EC9AABA00F8 /* RecentScreenshots.swift in Sources */,
+				A0A0EE0203002EC9AABA00F8 /* QuickNote.swift in Sources */,
+				A0A0EE0204002EC9AABA00F8 /* ExtrasViews.swift in Sources */,
 				115C12EC2ED3D003009754CA /* OpenNotchHUD.swift in Sources */,
 				14C08BB92C8DE4B1000F8AA0 /* BoringCalendar.swift in Sources */,
 				5955950D2E900ED800C66711 /* ApplicationRelauncher.swift in Sources */,
