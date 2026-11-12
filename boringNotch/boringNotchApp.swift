@@ -280,6 +280,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // Start recording clipboard history and watching screenshots at launch,
+        // not the first time those tabs are opened.
+        Task { @MainActor in
+            _ = ClipboardHistory.shared
+            _ = RecentScreenshots.shared
+        }
 
         NotificationCenter.default.addObserver(
             self,

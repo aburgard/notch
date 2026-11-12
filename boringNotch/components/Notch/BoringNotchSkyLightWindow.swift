@@ -109,6 +109,9 @@ class BoringNotchSkyLightWindow: NSPanel {
     
     private var observers: Set<AnyCancellable> = []
     
-    override var canBecomeKey: Bool { false }
+    /// True only while the Note tab is showing, so the notch can take typing
+    /// without stealing focus the rest of the time.
+    static var allowsKeyboardInput = false
+    override var canBecomeKey: Bool { Self.allowsKeyboardInput }
     override var canBecomeMain: Bool { false }
 }
